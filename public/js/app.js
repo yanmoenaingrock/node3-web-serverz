@@ -4,9 +4,12 @@ const forecast = document.getElementById("forecast");
 
 errorPara.style.color = "red";
 
+
 form.addEventListener("submit",(e) => {
     e.preventDefault();
+    forecast.textContent = "Loading...";
     let addr = document.querySelector("input").value;
+
     fetch("/weather?address=" + addr)
     .then((response, error) => {
         if( error ) {
