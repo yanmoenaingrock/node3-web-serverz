@@ -18,7 +18,7 @@ hbs.registerPartials( partialsPath );
 app.get("",(req, res) => {
     res.render("index", {
         title: "Weather App",
-        author: "ရန်မိုးနိုင်"
+        author: "Yan Moe Naing"
     });
 })
 
