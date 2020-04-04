@@ -9,6 +9,7 @@ form.addEventListener("submit",(e) => {
     e.preventDefault();
     forecast.textContent = "Loading...";
     let addr = document.querySelector("input").value;
+    errorPara.textContent = "";
 
     fetch("/weather?address=" + addr)
     .then((response, error) => {

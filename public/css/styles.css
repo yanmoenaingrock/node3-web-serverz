@@ -1,6 +1,6 @@
 body {
-    background-image: url(/img/weather.jpg);
-    background-size: 50%;
+    background-image: url(/img/w.png);
+    background-size: cover;
 }
 .container {
     width: 75%;
@@ -32,9 +32,13 @@ img {
     padding: 1em;
 }
 
-p {
+.p1 {
     font-size: 18px;
     color: black;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background-color: greenyellow;
+    opacity: 0.6;
 }
 
 ul {
