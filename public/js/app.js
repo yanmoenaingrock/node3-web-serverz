@@ -7,7 +7,7 @@ errorPara.style.color = "red";
 form.addEventListener("submit",(e) => {
     e.preventDefault();
     let addr = document.querySelector("input").value;
-    fetch("http://localhost:3000/weather?address=" + addr)
+    fetch("/weather?address=" + addr)
     .then((response, error) => {
         if( error ) {
             console.log( error );
